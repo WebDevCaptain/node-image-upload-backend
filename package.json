@@ -1,0 +1,30 @@
+{
+  "name": "node-express-mongo-file-upload",
+  "version": "0.0.1",
+  "description": "NodeJS Backend for handling file upload. Can be used as a boilerplate for bigger projects.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "file upload in NodeJS",
+    "mongodb file upload",
+    "multer",
+    "file upload on disk"
+  ],
+  "author": "Shreyash",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "multer": "^1.4.2",
+    "shortid": "^2.2.15"
+  }
+}
