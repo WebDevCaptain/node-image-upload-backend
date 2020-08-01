@@ -30,7 +30,7 @@ const multerConfig = multer({
 // This route handles single file uploads
 router.post(
   '/upload/one',
-  multerConfig.single('my-image'),
+  multerConfig.single('my-file'),
   (req, res) => {
     // console.log(req.file);
     res.status(201).send({
