@@ -9,6 +9,7 @@ require('./database/db');
 // Routers
 const diskUpload = require('./router/diskUpload');
 const mongoUpload = require('./router/mongoUpload');
+const cloudinaryUpload = require('./router/cloudinaryUpload');
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(helmet());
 // Installing the routers
 app.use('/disk', diskUpload);
 app.use('/mongo', mongoUpload);
+app.use('/cloud', cloudinaryUpload);
 
 app.get('/', (req, res) => {
   res.send({
